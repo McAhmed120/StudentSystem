@@ -1,10 +1,19 @@
-HELP.md
+# ==========================
+# Spring Boot / Java
+# ==========================
+# Maven target folder
 target/
 .mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
 
-### STS ###
+# Ignore resource files with secrets
+student_system/src/main/resources/*.properties
+student_system/src/main/resources/*.yml
+student_system/src/main/resources/*.env
+
+# Keep example/template configs
+# !student_system/src/main/resources/application-example.properties
+
+# STS (Spring Tool Suite) files
 .apt_generated
 .classpath
 .factorypath
@@ -13,14 +22,14 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
+# IntelliJ IDEA files
+.idea/
 *.iws
 *.iml
 *.ipr
-resources
+resources/
 
-### NetBeans ###
+# NetBeans files
 /nbproject/private/
 /nbbuild/
 /dist/
@@ -30,5 +39,32 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### VS Code ###
+# VS Code
 .vscode/
+
+# ==========================
+# React / Frontend
+# ==========================
+# Node modules
+studentfrontend/node_modules/
+
+# Build output
+studentfrontend/dist/
+studentfrontend/build/
+
+# Environment files
+studentfrontend/.env
+studentfrontend/.env.local
+studentfrontend/.env.development
+studentfrontend/.env.production
+studentfrontend/.env.test
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Optional: GitHub README / docs
+HELP.md
