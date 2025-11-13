@@ -1,0 +1,8 @@
+/* App-specific styles. Tailwind directives are imported once in src/index.css */
+
+/* small layout helpers if needed */
+body {
+	margin: 0;
+}
+
+/* Add any component-specific custom styles here */
